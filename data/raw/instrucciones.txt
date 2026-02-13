@@ -1,0 +1,11 @@
+⚠️ ARCHIVO DE DATOS OMITIDO
+--------------------------
+El archivo 'vehicles.csv' original no se ha subido a este repositorio debido a que su tamaño (~1GB) excede los límites de almacenamiento de GitHub.
+
+Para ejecutar los notebooks de este proyecto, por favor:
+1. Descarga el dataset original de Kaggle:
+   https://www.kaggle.com/datasets/austinreese/craigslist-carstrucks-data
+2. Descomprime el archivo y renómbralo como 'vehicles.csv'.
+3. Colócalo en esta carpeta (data/raw/).
+
+El resto de archivos en 'data/processed/' sí están disponibles para poder ejecutar la aplicación de Streamlit y los últimos notebooks sin necesidad del archivo bruto.
