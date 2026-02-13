@@ -5,8 +5,6 @@ import numpy as np
 # 1. DICCIONARIOS DE REGLAS (Lógica de Negocio)
 # ==============================================================================
 
-# IMPORTANTE: El orden de las claves importa. Se ejecutan de arriba a abajo.
-
 REGLAS_DRIVE = {
     '4wd': r'4wd|4x4|awd|all[- ]?wheel|4[- ]?wheel',  # Prioridad 1: Tracción total
     'fwd': r'fwd|front[- ]?wheel',  # Prioridad 2: Delantera

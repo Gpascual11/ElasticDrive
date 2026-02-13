@@ -1,4 +1,4 @@
-⚠️ ARCHIVO DE DATOS OMITIDO
+ARCHIVO DE DATOS OMITIDO
 --------------------------
 El archivo 'vehicles.csv' original no se ha subido a este repositorio debido a que su tamaño (~1GB) excede los límites de almacenamiento de GitHub.
 

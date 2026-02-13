@@ -5,9 +5,6 @@ import matplotlib.pyplot as plt
 import joblib
 import os
 
-# ==============================================================================
-# 1. CONFIGURACIÓN Y DISEÑO PREMIUM (YELLOW HIGHLIGHT)
-# ==============================================================================
 st.set_page_config(page_title="ElasticDrive AI", layout="wide", page_icon="⚡")
 
 st.markdown("""
@@ -44,9 +41,6 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
-# ==============================================================================
-# 2. CARGA DE MODELOS
-# ==============================================================================
 @st.cache_resource
 def cargar_recursos():
     try:
@@ -64,7 +58,6 @@ def cargar_recursos():
 
 clf_pipeline, tier_metadata = cargar_recursos()
 
-# Diccionario semántico de Tiers
 TIER_INFO = {
     1: "Económico (Alta Depreciación / Trabajo)",
     2: "Gama Media-Baja (Uso Diario / Sedan)",
@@ -72,9 +65,6 @@ TIER_INFO = {
     4: "Premium (Lujo / Seminuevo / Colección)"
 }
 
-# ==============================================================================
-# 3. SIDEBAR (INPUTS VEHÍCULO, MERCADO Y STOCK)
-# ==============================================================================
 st.sidebar.title("⚡ Panel Control")
 st.sidebar.markdown("---")
 
@@ -98,9 +88,6 @@ dias_stock = st.sidebar.number_input("Días en Inventario (Aging)", 0, 365, 15)
 
 analizar = st.sidebar.button("CALCULAR TASACIÓN COMPLETA")
 
-# ==============================================================================
-# 4. CUERPO PRINCIPAL
-# ==============================================================================
 st.title("Sistema Inteligente de Tasación ElasticDrive")
 
 if analizar:
@@ -188,7 +175,6 @@ if analizar:
         st.error("Error: No se detectan los modelos entrenados (.pkl).")
 
 else:
-    # Pantalla de Bienvenida (Imagen de cabecera)
     st.image("https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=1000",
              width="stretch")
     st.markdown(
